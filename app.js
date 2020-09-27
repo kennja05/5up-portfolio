@@ -13,6 +13,10 @@ app.get('/trip-tracker', function(req, res){
   res.sendFile(path.join(__dirname + '/public/triptracker.html'))
 })
 
+app.get('/image-scrambler', function(req, res){
+  res.sendFile(path.join(__dirname + '/public/imageScrambler.html'))
+})
+
 // app.get('*', function(req, res){
 //   res.sendFile(path.join(__dirname + '/public/404.html'))
 // })
