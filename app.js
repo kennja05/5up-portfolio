@@ -2,6 +2,7 @@ const express = require("express")
 
 const path = require('path')
 const app = express()
+const fs = require('fs')
 
 app.use(express.static("public"))
 
@@ -15,6 +16,16 @@ app.get('/trip-tracker', function(req, res){
 
 app.get('/image-scrambler', function(req, res){
   res.sendFile(path.join(__dirname + '/public/imageScrambler.html'))
+})
+
+app.get('/states-game', function(req, res){
+  res.sendFile(path.join(__dirname + '/public/statesGame.html'))
+})
+
+app.get('/resume', function(req, res){
+  const data =fs.readFileSync('./public/JKResumecopy.pdf');
+  res.contentType("application/pdf");
+  res.send(data);
 })
 
 // app.get('*', function(req, res){
