@@ -30,6 +30,10 @@ app.get('/converter', function(req, res){
   res.sendFile(path.join(__dirname + '/public/converter.html'))
 })
 
+app.get('/pcwb', function(req, res){
+  res.sendFile(path.join(__dirname + '/public/pcwb.html'))
+})
+
 app.get('/resume', function(req, res){
   const data =fs.readFileSync('./public/JKResumecopy.pdf');
   res.contentType("application/pdf");
