@@ -22,6 +22,10 @@ app.get('/states-game', function(req, res){
   res.sendFile(path.join(__dirname + '/public/statesGame.html'))
 })
 
+app.get('/linear-gradient-generator', function(req, res){
+  res.sendFile(path.join(__dirname + '/public/gradientGenerator.html'))
+})
+
 app.get('/resume', function(req, res){
   const data =fs.readFileSync('./public/JKResumecopy.pdf');
   res.contentType("application/pdf");
