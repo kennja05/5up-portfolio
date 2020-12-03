@@ -3997,3 +3997,24 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+	.cog:hover {
+		animation-name: rotateCog;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-out;
+	}
+
+	@keyframes rotateCog {
+		0% {
+			transform: rotate(0deg) 
+		}
+
+		50% {
+			transform: rotate(180deg)
+		}
+
+		100% {
+			transform: rotate(360deg)
+		}
+	}
