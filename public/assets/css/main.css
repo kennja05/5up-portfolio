@@ -4000,18 +4000,18 @@ input, select, textarea {
 
 	.cog:hover {
 		animation-name: rotateCog;
-		animation-duration: 3s;
+		animation-duration: 2s;
 		animation-iteration-count: infinite;
 		animation-timing-function: ease-out;
 	}
 
 	@keyframes rotateCog {
 		0% {
-			transform: rotate(0deg) 
+			transform: rotate(0deg); 
 		}
 
 		50% {
-			transform: rotate(180deg)
+			transform: rotate(580deg)
 		}
 
 		100% {
