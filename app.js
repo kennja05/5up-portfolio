@@ -35,7 +35,7 @@ app.get('/pcwb', function(req, res){
 })
 
 app.get('/resume', function(req, res){
-  const data =fs.readFileSync('./public/JKResumecopy.pdf');
+  const data =fs.readFileSync('./public/JacobKSEResume.pdf');
   res.contentType("application/pdf");
   res.send(data);
 })
